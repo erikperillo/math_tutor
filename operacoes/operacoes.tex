@@ -1,0 +1,372 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\title{Matemática Elementar: Operações}
+\author{Erik Perillo}
+\maketitle
+
+\begin{abstract}
+Nesta aula, vamos tratar das operações mais básicas que se pode fazer em 
+problemas de matemática. Estar fera nessas coisas é muito importante pra 
+que você possa prosseguir com segurança na construção do seu conhecimento em
+matemática até chegar em coisas que você verá na faculdade, como cálculo e 
+geometria analítica.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introdução}
+\paragraph{}
+O objetivo desta etapa é fazer com que você se lembre das regras mais básicas
+usadas nas continhas de matemática, como adição, multiplicação etc. 
+Pela importância dessa parte para todo o resto, nós vamos começar 
+desde o básico do básico (a ponto de parecer bobo), mas é melhor repetirmos 
+o que já sabemos e ter certeza de que sabemos do que ficar na dúvida eterna.
+Vamos começar a rever as operações matemáticas.
+\paragraph{}
+O que, exatamente, são operações?
+A primeira coisa relacionada a matemática que toda criança (normal) aprende a
+fazer é a famosa conta de mais e menos, ou \textit{adição} e \textit{subtração}, 
+representadas pelos símbolos $+$ e $-$. Logo depois, aprendemos a 
+\textit{multiplicação} e a \textit{divisão}, representados por $*$ e $/$. Todas
+essas coisinhas, $+ - * /$, são \textit{operações}. 
+\paragraph{}
+\textbf{Uma operação é algo que se aplica a dois números para se obter um novo
+número}. A adição, por exemplo, pega dois números e, com eles, forma outro 
+número que é a soma deles. Por exemplo: $2 + 3$. Sabemos que o resultado é $5$.
+Veja $2*4$. Sabemos que o resultado é $8$. Já dá pra perceber como a soma e a 
+multiplicação são mesmo operações. No caso da adição, \textbf{pegamos dois 
+números} ($2$ e $3$) e \textbf{obtivemos um novo número}, no caso, $5$. 
+\paragraph{}
+\textbf{Toda operação tem um símbolo que a representa}. 
+No caso da adição, sabemos que é $+$.
+\paragraph{}
+Como sabemos o que fazer quando vemos o símbolo de $+$? Quer dizer: como 
+sabemos que temos que somar os números? Sabemos disso porque sabemos como a
+adição funciona, ou seja, sabemos quais as regras da adição. 
+\textbf{Toda operação tem regras de como ela deve funcionar}.
+\paragraph{}
+Nesta etapa, vamos aprender mais sobre os nomes formais das regrinhas/termos que 
+usamos em todo tipo de operação matemática, e vamos ver as regras das operações
+que mais usamos no dia a dia: \textit{adição, subtração, multiplicação, divisão,
+e exponenciação}.
+
+\section{Propriedades de Operações}
+\paragraph{}
+Nesta seção, vamos ver quais as características que cada operação pode ter.
+
+\subsection{Precedência}
+\paragraph{}
+Observe a conta a seguir:
+\begin{equation}
+34 + 2*5
+\end{equation}
+Qual o resultado dessa conta? Sabemos que é $34 + 10 = 44$. E a conta 
+a seguir: 
+\begin{equation}
+12 - 2*(3 - 1) + 4
+\end{equation}
+Quanto vale? Deve ser fácil de ver que dá $12 - 2*2 + 4 = 12$. Agora volte e 
+olhe para as duas contas. Como nós conseguimos resolvê-las? Como sabemos que, em
+$34 + 2*5$, nós temos que primeiro multiplicar o $2$ pelo $5$ e depois somar com
+o $34$? Isso é porque sabemos que a multiplicação tem \textit{precedência} maior
+que a adição, ou seja, \textbf{ela deve ser feita primeiro}. Na segunda conta,
+sabemos que temos que fazer a conta no parênteses primeiro, mesmo que dentro
+dele existe uma conta de subtração. Isso porque sabemos que \textbf{o parênteses
+tem a maior precedência de todas}. Não importa a conta, sabemos que temos que 
+primeiro resolver o que está no parênteses e depois ir para o resto. 
+E se tivermos algo como:
+$$3 + 12*(12 + 4*(4 - 2))$$
+O que fazemos? Tem um parênteses dentro do outro! Oras, cara pálida, é fácil:
+apenas aplique a mesma regra quando entrar no parênteses! Então, devemos olhar
+para $3 + 12*(12 + 4*(4 - 2))$ e perguntar: \textbf{qual operação tem maior 
+precedência?} então vemos que é o que está dentro do parênteses, que é 
+$12 + 4*(4 - 2)$. Por que não fazer a mesma pergunta de novo? Se você perguntar
+novamente qual operação tem maior precedência, vai ver que é o parênteses de 
+novo. Assim, vai conseguir fazer $4 - 2 = 2$, e vai ter $12 + 4*4 = 28$. Então,
+olhando passo a passo, você vai ter algo como:
+$$3 + 12*(12 + 4*(4 - 2)) =$$
+$$3 + 12*(12 + 4*(2)) =$$
+$$3 + 12*(20) =$$
+$$3 + 240 = 243$$
+Lindo, não? Agora você já sabe tudo sobre \textit{precedência}!
+
+\subsection{Comutatividade}
+\paragraph{}
+Vamos voltar para a expressão $34 + 2*5$ da seção anterior. Lembre-se que o 
+valor que tivemos foi $44$. E se, agora, fizermos uma coisa um pouco diferente,
+algo do tipo:
+$$34 + 5*2$$
+Caso você não tenha percebido o que mudou, o $5$ trocou de lugar com o $2$ na 
+multiplicação. Que valor vamos ter agora? Fazendo as contas, temos 
+$34 + 10 = 44$, que é o mesmo valor de antes! Isso sugere uma coisa: quando 
+mudamos os números de ordem na multiplicação, \textbf{o resultado é o mesmo}.
+$2*5 = 5*2 = 10$. Quando uma operação tem essa propriedade, dizemos que a 
+operação é \textit{comutativa}. 
+\paragraph{}
+Nem toda operação é comutativa! Veja a 
+subtração, por exemplo. Pegue $5 - 2$. Sabemos que é $3$. Pegue agora $2 - 5$.
+O resultado não é mais $3$, mas sim $-3$! Isso mostra que $2 - 5$ não é igual a
+$5 - 2$ e, então, a subtração não é comutativa!
+E isso é tudo o que você tem que saber sobre essa propriedade.
+
+\subsection{Associatividade}
+\paragraph{}
+Veja a expressão:
+$$5 + 7 + 11$$
+Fazendo a conta, temos $12 + 11 = 23$. Note que primeiro somamos $5$ a $7$ e 
+só depois somamos o resultado, $12$, com o $11$. E se tivéssemos primeiro 
+somado o $7$ com o $11$? Teríamos $5 + 18 = 23$. 
+O resultado foi o mesmo, não importando a ordem com que fizemos as contas, 
+ou seja:
+$$5 + 7 + 11 =$$
+$$(5 + 7) + 11 =$$
+$$5 + (7 + 11) = 23$$
+Notamos, então, que a adição é uma operação \textit{associativa}, ou seja:
+\textbf{fazer a conta começando da esquerda pra direita ou da direita pra 
+esquerda tanto faz}. Em qualquer operação que isso aconteça diz-se que ela é
+\textit{associativa}.
+
+\subsection{Distributividade}
+\paragraph{}
+Falar de distributividade só faz sentido se falarmos de duas operações. 
+Não faz sentido, por exemplo, falar que a multiplicação tem distributividade.
+Faz sentido, entretanto, falar que a multiplicação tem distributividade com
+a adição. Viu a diferença? \textbf{Distributividade é uma relação entre duas
+operações}.
+O que raios é isso? Veja a expressão:
+$$3*(4 + 5)$$
+Qual o resultado? Sabemos que é $3*(9) = 27$. Agora veja a conta:
+$$3*4 + 3*5$$
+O que dá isso? Notamos que dá $12 + 15 = 27$. Hum, interessante: deu a mesma
+coisa que a conta anterior, mesmo que elas pareçam diferentes. Isso sempre vai
+ser verdade, porque a multiplicação é \textit{distributiva} com relação à 
+adição, ou seja, Você pode multiplicar os números dentro do parênteses
+e depois adicioná-los um a um. Veja que não precisam ser só dois números dentro
+do parênteses, podem ser quantos você quiser:
+$$2*(3 + 4 + 5 + 6) =$$
+	$$(2*3) + (2*4) + (2*5) + (2*6)=$$
+$$6 + 8 + 10 + 12 = 36$$
+Se tivéssemos somado tudo primeiro, teríamos $2*(18)$, que também é igual a 
+$36$. Então vemos que a multiplicação é distributiva com relação à adição porque
+\textbf{podemos distribuir o $2$ para dentro do parênteses, multiplicando todo 
+número por $2$, e depois somar todos os resultados das multiplicações}. 
+\paragraph{}
+Note que o contrário não precisa ser verdade! A adição, por exemplo, não é 
+distributiva com relação à multiplicação. Veja a expressão:
+$$2 + (4*5)$$
+O resultado é $2 + 20 = 22$. Se distribuíssemos o $2$, entretanto, teríamos:
+$$(2+4) * (2+5)$$
+O que dá $6*7 = 42$, que obviamente não é igual a $22$.
+\paragraph{}
+Parabéns! Agora que você já sabe o que é distributividade, você já conhece 
+todas as propriedades de operações!
+
+\section{Operações comuns}
+Nesta seção, vamos analisar as operações matemáticas mais famosas: 
+\textit{adição, subtração, multiplicação, divisão, exponenciação e radiciação}.
+
+\subsection{Adição}
+\paragraph{}
+A adição é a operação mais simples que se pode imaginar. Seu símbolo é $+$.
+Todos sabemos o que fazer quando temos dois números como entrada para a operação
+de adição: devemos somá-los. 
+\paragraph{}
+A adição é:
+\begin{itemize}
+\item Comutativa. Exemplo:
+$$4 + 5 = 9$$
+$$5 + 4 = 9$$
+\item Associativa. Exemplo:
+$$3 + 2 + 4 = 9$$
+$$(3 + 2) + 4 = (5) + 4 = 9$$
+$$3 + (2 + 4) = 3 + (6) = 9$$
+\end{itemize}
+
+\subsection{Subtração}
+\paragraph{}
+A subtração é o oposto da adição. Seu símbolo é $-$.
+\paragraph{}
+A subtração \textbf{não} é comutativa. Exemplo:
+$$4 - 5 = -1$$
+$$5 - 4 = 1$$
+Ela também \textbf{não} é associativa. Veja:
+$$(3 - 2) - 4 = 1 - 4 = -3$$
+$$3 - (2 - 4) = 3 - (-2) = 3 + 2 = 5$$
+
+\subsection{Multiplicação}
+\paragraph{}
+Seu símbolo é $*$.
+A multiplicação pode ser vista como uma adição repetida. Isso mesmo! Ela só
+diz quantas vezes você deve repetir uma soma. Veja, por exemplo:
+$$4 + 4 + 4$$
+O resultado é $12$. Vemos que o $4$ é somado três vezes. Se fizermos:
+$$3*4$$
+O resultado também é 12, o que mostra que a multiplicação é só a adição 
+repetida!
+\paragraph{}
+Multiplicação tem precedência maior sobre adição/subtração. Então:
+$$2 + 3*4 - 5 = 2 + (3*4) - 5 = 2 + (12) - 5 = 9$$
+\paragraph{}
+As multiplicação é:
+\begin{itemize}
+\item Comutativa. Exemplo:
+$$4*5 = 20$$
+$$5*4 = 20$$
+\item Associatividade. Exemplo:
+$$3*2*4 = 24$$
+$$(3*2)*4 = (6)*4 = 24$$
+$$3*(2*4) = 3*(8) = 24$$
+\item Distributiva com relação à adição. Exemplo:
+$$2*(3 + 4) = 2*(7) = 14$$
+$$(2*3) + (2*4) = (6) + (8) = 14$$
+\item Distributiva com relação à subtração. Exemplo:
+$$2*(3 - 4) = 2*(-1) = -2$$
+$$(2*3) - (2*4) = (6) - (8) = -2$$
+\end{itemize}
+
+\subsection{Divisão}
+\paragraph{}
+Seu símbolo é $/$.
+Assim como a subtração é o oposto da adição, a divisão é o oposto da 
+multiplicação.
+\paragraph{}
+Divisão tem precedência maior sobre adição/subtração. Então:
+$$2 + 4/2 - 5 = 2 + (4/2) - 5 = 2 + (2) - 5 = -1$$
+\paragraph{}
+A divisão é:
+\begin{itemize}
+\item Distributiva com relação à adição. Exemplo:
+$$(3 + 5)/2 = (8)/2 = 4$$
+$$(3/2) + (5/2) = 1.5 + 2.5 = 4$$
+\item Distributiva com relação à subtração. Exemplo:
+$$(3 - 5)/2 = (-2)/2 = -1$$
+$$(3/2) - (5/2) = 1.5 - 2.5 = -1$$
+\end{itemize}
+A divisão \textbf{não} é comutativa. Exemplo:
+$$4 / 5 = 0.8$$
+$$5 / 4 = 1.25$$
+Ela também \textbf{não} é associativa. Veja:
+$$(3 / 2) / 4 = (1.5)/4 = 0.375$$
+$$3 / (2 / 4) = 3 / (0.5) = 6$$
+
+\subsection{Exponenciação}
+\paragraph{}
+Assim como a multiplicação é a adição repetida, a exponenciação é a 
+multiplicação repetida. Dá uma olhada:
+$$4 * 4 * 4$$
+Isso dá $64$. A multiplicação do 4 por ele mesmo foi feita três vezes. 
+Agora olhe:
+$$4^3$$
+Isso também dá $64$, o que mostra que exponenciação é só a multiplicação
+repetida!
+\paragraph{}
+Exponenciação tem precedência maior sobre multiplicação/divisão. Então:
+$$2 * 4^2 - 5 = 2 * (4^2) - 5 = 2 * (16) - 5 = 36 - 5 = 31$$
+\paragraph{}
+A exponenciação é:
+\begin{itemize}
+\item Distributiva com relação à multiplicação. Exemplo:
+$${(3*2)}^2 = {(6)}^2 = 36$$
+$$(3^2)*(2^2) = (9)*(4) = 36$$
+\item Distributiva com relação à divisão. Exemplo:
+$${(4/2)}^2 = {(2)}^2 = 4$$
+$$(4^2)/(2^2) = (16)/(4) = 4$$
+\end{itemize}
+Note que o contrário não é verdade, ou seja, nem a multiplicação nem a 
+divisão são distributivas com relação à exponenciação! Veja:
+$$4^{(2*3)} = 4^6 = 4096$$
+$$(4^2)*(4^3) = 1024$$
+As exponenciação \textbf{não} é comutativa. Exemplo:
+$$2^3 = 8$$
+$$3^2 = 9$$
+Ela também \textbf{não} é associativa. Exemplo:
+$${(2^3)}^4 = 8^4 = 4096$$
+$2^{(3^4)} = 2^{81}$ é um número tão grande que nem vale a pena colocar aqui!
+
+\subsection{Radiciação}
+\paragraph{}
+A radiciação é a operação inversa da exponenciação. 
+Primeiro, veja como é uma radiciação do número $4$:
+$$\sqrt{4}$$
+Quanto dá isso? Bom, do jeito que está acima, nós estamos olhando para a 
+\textit{raiz quadrada} de $4$. Tirar a raiz quadrada de um número quer dizer:
+\textbf{Que número multiplicado por ele mesmo dá esse número na raiz?}. Veja
+o exemplo do $4$: Que número multiplicado por ele mesmo dá $4$? Ora, é o 2,
+veja: $2*2 = 4$. Assim, $\sqrt{4} = 2$.
+Mas e se eu quiser saber, por exemplo, qual número multiplicado por ele 
+\textbf{três} vezes dá $8$? Isso é diferente da raiz quadrada que vimos acima.
+Queremos saber qual é o número $x$ tal que $x*x*x = 8$. Representamos esse
+número por $\sqrt[3]{8}$. Viu que apereceu um número 3 ali em cima? Pois é. Na
+raiz quadrada, esse número é $2$, mas a gente esconde o número $2$ quando é uma
+raiz quadrada. Entretando, $\sqrt[2]{4} = \sqrt{4}$, é a mesma coisa.
+\paragraph{}
+Radiciação tem precedência maior sobre multiplicação/divisão. Então:
+$$2 * \sqrt{4} - 5 = 2 * (\sqrt{4}) - 5 = 2 * (2) - 5 = 4 - 5 = -1$$
+\paragraph{}
+As radiciação \textbf{não} é comutativa. Exemplo:
+$$\sqrt[3]{8} = 2$$
+$$\sqrt[8]{3} = 1.147$$
+A exponenciação é:
+\begin{itemize}
+\item Distributiva com relação à multiplicação. Exemplo:
+$$\sqrt[2]{(4*4)} = \sqrt[2]{16} = 4$$
+$$\sqrt[2]{(4)}*\sqrt[2]{(4)} = 2*2 = 4$$
+\item Distributiva com relação à divisão. Exemplo:
+$$\sqrt[2]{(16/4)} = \sqrt[2]{4} = 2$$
+$$\sqrt[2]{(16)}/\sqrt[2]{(4)} = 4/2 = 4$$
+\end{itemize}
+
+\section{Exercícios}
+
+\subsection{Seção 2}
+\begin{enumerate}
+\item Ordene as precedências do parênteses, exponenciação, multiplicação e 
+adição, da menor pra maior.
+\item Dê um exemplo de uma operação que é comutativa e uma que não é. Mostre
+com números um exemplo para cada uma das duas.
+\item Dê um exemplo de uma operação que é associativa e uma que não é. Mostre
+com números um exemplo para cada uma das duas.
+\item Faz sentido dizer que a multiplicação é distributiva? Por quê?
+\end{enumerate}
+
+\subsection{Seção 3}
+\begin{enumerate}
+\item Resolva as expressões:
+\begin{enumerate}
+\item $3 + 4*5$
+\item $(3 + 4)*5$
+\item $5*(3 + 4)$
+\item $11 - (3 + 4) + 5*(3 - (3 - 5))*2$
+\end{enumerate}
+\item Resolva as expressões (use uma calculadora para facilitar):
+\begin{enumerate}
+\item $3 * 4^3$
+\item ${(3 - 4)}^3$
+\item ${(3 * 4)}^3$
+\item $1 - (3^4) + 5*4^2*3^3$
+\item $2*\sqrt{4}*3^3*2^{(1+2)}$
+\end{enumerate}
+\item Suponha que uma pessoa não sabe qual a ordem de precedência das
+operações. Ela só sabe que o parênteses tem que ser feito primeiro.
+Ajude essa pessoa colocando os parênteses nos lugares certos para que ela
+faça a operação corretamente. Por exemplo:
+$$4 + 3*2 - 2*4^2$$
+Tem que virar:
+$$(4 + (3*2)) - (2*(4^2))$$
+Sua vez! Complete com parênteses a seguinte expressão:
+$$\sqrt{3}*4 + 5 - 3*2 + 2*3^4*5$$
+
+\end{enumerate}
+
+\end{document}

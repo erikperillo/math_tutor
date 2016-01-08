@@ -1,0 +1,293 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\title{Matemática Elementar: Manipulações Algébricas}
+\author{Erik Perillo}
+\maketitle
+\begin{abstract}
+Nesta etapa, nós vamos ver os macetes mais usados no dia a dia das 
+manipulações algébricas, mais conhecidas como continhas.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introdução}
+\paragraph{}
+Manipulações algébricas são importantíssimas para qualquer área da matemática
+que envolva contas. Muitas vezes, as contas que fazemos se encontram em um
+estado complicado, feio, difícil de se resolver. Com truques clássicos de
+manipulação, é possível simplificar e resolver um montão de contas que você
+vai encontrar por aí. Veja, por exemplo, a conta:
+$$\frac{6x^2 + 36x + 48}{\frac{2}{1/3}}$$
+Parece meio complicada, não? Entretanto, no fim desta etapa, você vai estar
+capaz de bater o olho em algo como isso e perceber que ela é equivalente a:
+$${(x + 3)}^2 - 1$$
+Muito mais simples, não? Por isso é tão importante estar fera nessa parte!
+
+\section{Operações e suas técnicas}
+\paragraph{}
+Nesta seção vamos ver as técnicas associadas a cada tipo de operação, uma de
+cada vez.
+
+\subsection{Adição e subtração}
+\paragraph{}
+\begin{itemize}
+	\item $a - (-b) = a + b$
+	\paragraph{}
+	Exemplo:
+	$$4 - (-3) = 4 + 3 = 7$$
+	\item $b - a = -(a - b)$
+	\paragraph{}
+	Apenas distribua o -1 ($-(a - b) = -1*(a - b)$!!) para ver:
+	$$-1*(a - b) = (-1*(a)) - (-1*(b)) = -a + b = b - a$$
+	\paragraph{}
+	Exemplos:
+	\begin{enumerate}
+		\item 
+		$$-(5 - 4) = -(1) = -1$$
+		$$(4 - 5) = -1$$
+		\item 
+		$$5 - (4 - 5) = 5 - (5 - 4) = 4$$
+	\end{enumerate}
+\end{itemize}
+
+\subsection{Multiplicação}
+\begin{itemize}
+	\item $a*(b+c) = a*b + a*c$ (distributiva)
+	\paragraph{}
+	Exemplo:
+	$$4*(5 + 6) = 4*(11) = 44$$
+	$$4*5 + 4*6 = 20 + 24 = 44$$
+	\item $a*b + a*c = a*(b + c)$ (distributiva!)
+	\paragraph{}
+	Note que essa é só a distributiva sendo feita ao contrário. Exemplo:
+	$$6 + 9 = 15$$
+	$$6 + 9 = 3*2 + 3*3 = 3*(2 + 3) = 3*(5) = 15$$
+	\item $(a + b)*(c + d) = a*c + a*d + b*c + b*d$
+	\paragraph{}
+	Exemplo:
+	$$(2+3)*(4+5) = (5)*(9) = 45$$
+	$$(2+3)*(4+5) = 2*4 + 2*5 + 3*4 + 3*5 = 8 + 10 + 12 + 15 = 45$$
+	Isso traz uma propriedade importante:
+	$${(a+b)}^2 = a^2 + 2*a*b + b^2$$
+	Para ver isso, é só fazer $(a+b)*(a+b)$ e você vai ter o resultado. Saber 
+	isso de cabeça vai te poupar tempo, pois isso acontece bastante. Outra 
+	forma é:
+	$${(a-b)}^2 = a^2 - 2*a*b + b^2$$
+\end{itemize}
+
+\subsection{Divisão}
+Antes de entrar nesta seção, vamos relembrar um conceito importante: 
+\textit{frações}. O que são frações? \textbf{Uma fração é a representação de
+uma divisão}. Quando você divide $10$ por $4$, por exemplo, você pode 
+representar o resultado ($2.5$) através de uma fração:
+$$\frac{10}{4}$$
+A parte de cima, chamamos de \textit{numerador}. A parte de baixo, chamamos de
+\textit{denominador}. Vamos agora ver as propriedades de frações.
+\begin{itemize}
+	\item \textbf{Dividir por um número é igual a multiplicar pelo inverso}.
+	Veja a fração $\frac{4}{2}$, por exemplo. O número resultante é exatamente
+	igual ao produto de $4$ com o inverso de $2$, ou seja,
+	$4*(\frac{1}{2}) = 4*(0.5) = 2$. Saber disso se torna mais útil em
+	casos como:
+	$$\frac{4}{\frac{1}{3}}$$
+	Como resulver isso? Oras, sabendo que dividir é multiplicar pelo inverso,
+	podemos ver que:
+	$$\frac{4}{\frac{1}{3}} = 4*3 = 12$$
+	\item \textbf{Soma de frações}:
+	$$\frac{a}{c} + \frac{b}{c} = \frac{(a + b)}{c}$$
+	\paragraph{}
+	Exemplo:
+	$$\frac{10}{2} + \frac{4}{2} = 5 + 2 = 7$$
+	$$\frac{10}{2} + \frac{4}{2} = \frac{(10 + 4)}{2} = \frac{14}{2} = 7$$
+	Note que \textbf{o denominador tem que ser o mesmo entre as duas frações}.
+	Não podemos, por exemplo, somar as partes de cima de $\frac{4}{3} + 
+	\frac{5}{8}$, pois os denominadores são diferentes ($3$ e $8$). Mais pra 
+	frente vamos ver como contornar isso. Por ora, podemos ver o motivo. Lembra
+	que dividir por um número é multiplicar pelo inverso dele? Pois bem, podemos
+	então escrever a expressão anterior na forma:
+	$$\frac{10}{2} + \frac{4}{2} = 10*(\frac{1}{2}) + 4*(\frac{1}{2}) =$$
+	$$(10 + 4)*(\frac{1}{2}) = \frac{(14)}{2} = 7$$
+	Ou seja: no fundo, estamos aplicando a distributiva! então não faz sentido
+	quando o denominador é diferente, pois então não podemos distribuir.
+	\item \textbf{Multiplicação de frações}:
+	$$(\frac{a}{b})*(\frac{c}{d}) = \frac{(a*c)}{(b*d)}$$
+	Ou seja, multiplicamos os de cima com os de cima e os de baixo com os de
+	baixo. Exemplo:
+	$$\frac{4}{2} * \frac{9}{3} = 2 * 3 = 6$$
+	$$\frac{4}{2} * \frac{9}{3} = \frac{(4*9)}{(2*3)} = \frac{36}{6} = 6$$
+	\item \textbf{Simplificações de frações}:
+	\paragraph{}
+	Observe a fração:
+	$$\frac{400}{300}$$
+	Será que temos mesmo que dividir $400$ por $300$? Não há uma forma de 
+	simplificar as coisas? Claro que há, amiguinho (a)! Sabemos que 
+	$400 = 4*100$ e $300 = 3*100$, então podemos escrever:
+	$$\frac{400}{300} = \frac{(4*100)}{(3*100)} = 
+	(\frac{4}{3})*(\frac{100}{100}) = \frac{4}{3}*1 = \frac{4}{3}$$
+	A gente aplicou a regra da multiplicação de frações pra separar as duas
+	frações. Então fica a regra: \textbf{Quando o numerador e o denominador
+	são múltiplos de um mesmo número, podemos dividir os dois por esse número}.
+	No exemplo de cima, nós vimos que tanto $400$ quanto $300$ são 
+	\textbf{múltiplos de 100}. A gente, então, pode \textbf{simplificar} 
+	a fração, ou seja, sumir com o $100$ dividindo o $400$ e o $300$ por $100$.
+	\paragraph{}
+	Outros exemplos:
+	\begin{enumerate}
+		\item $\frac{8}{6} = \frac{2*4}{2*3} = \frac{4}{3}$
+		\item $\frac{169}{26} = \frac{13*13}{13*2} = \frac{13}{2}$
+		\item $\frac{1000}{100} = \frac{100*10}{100*1} = \frac{10}{1} = 10$
+	\end{enumerate}
+	\item \textbf{Adição de frações com denominadores diferentes}:
+	\paragraph{}
+	Veja a expressão:
+	$$\frac{4}{3} + \frac{7}{5}$$
+	Como adicionamos isso? Podemos reescrever a expressão como:
+	$$\frac{4}{3}*\frac{5}{5} + \frac{7}{5}*\frac{3}{3}$$
+	Veja que o número resultante não mudou em nada: a gente apenas multiplicou
+	por $5/5$ e por $3/3$, ou seja, multiplicamos por $1$. Então o resultado
+	tem que ser a mesma coisa! mas olha agora o que dá pra fazer:
+	$$\frac{4}{3}*\frac{5}{5} + \frac{7}{5}*\frac{3}{3} = \frac{4*5}{3*5} + 
+	\frac{7*3}{5*3}$$
+	Opa! Agora os denominadores das duas frações são iguais! Agora sim podemos
+	adicionar as duas:
+	$$\frac{4*5}{3*5} + \frac{7*3}{5*3} = \frac{4*5}{15} + \frac{7*3}{15} =
+	\frac{(4*5 + 7*3)}{15} = \frac{41}{15}$$
+	Mágico, não? Como regra geral, a gente tem:
+	$$\frac{a}{b} + \frac{c}{d} = \frac{(a*d + b*c)}{b*d}$$
+\end{itemize}
+
+\subsection{Exponenciação}
+Primeiramente, vamos dar nomes aos bois. Quando vemos algo como:
+$$4^5$$
+Nós dizemos que o $4$ é a \textit{base} e o $5$ é o \textit{expoente}.
+\begin{itemize}
+	\item $a^0 = 1$
+	\paragraph{}
+	Isso mesmo. \textbf{Para qualquer número} (tirando o zero), elevar ele
+	a zero dá $1$. Exemplos:
+	\begin{enumerate}
+		\item $1^0 = 1$
+		\item $1343434^0 = 1$
+		\item $0.34398^0 = 1$
+		\item ${-10}^0 = 1$
+	\end{enumerate}
+	\item ${(a*b)}^c = a^c*b^c$
+	\paragraph{}
+	Exemplo:
+	$${(3*2)}^2 = {(6)}^2 = 36$$
+	$${(3*2)}^2 = 3^2*2^2 = 9*4 = 36$$
+	Note que isso não é verdade para a soma:
+	$${(3+2)}^2 = {(5)}^2 = 25$$
+	O que é diferente de:
+	$$3^2 + 2^2 = 9 + 4 = 13$$
+	\item $a^b*a^c = a^{(b + c)}$
+	\paragraph{}
+	Exemplo:
+	$$3^2*3^5 = (9)*(243) = 2187$$	
+	$$3^2*3^5 = 3^{(2 + 5)} = 3^{(7)} = 2187$$	
+	Note que \textbf{a base tem que ser a mesma}.
+	\item $\frac{a^b}{a^c} = a^{(b - c)}$
+	\paragraph{}
+	Exemplos:
+	\begin{enumerate}
+		\item 
+		$$\frac{3^5}{3^2} = \frac{243}{9} = 27$$	
+		$$\frac{3^5}{3^2} = 3^{(5-2)} = 3^3 = 27$$	
+		\item
+		$$\frac{3^2}{3^5} = \frac{9}{243} = 0.037$$	
+		$$\frac{3^2}{3^5} = 3^{(2-5)} = 3^{-3} = 0.037$$	
+	\end{enumerate}
+	Note que \textbf{a base tem que ser a mesma}.
+	\item ${(a^b)}^c = a^{(b*c)}$
+	\paragraph{}
+	Exemplo:
+	$${(3^2)}^3 = {(9)}^3 = 729$$
+	$${(3^2)}^3 = 3^{(2*3)} = 3^6 = 729$$
+\end{itemize}
+
+\subsection{Radiciação}
+Primeiro, vamos notar uma coisa: 
+$$\sqrt{4} = 4^{1/2} = 2$$
+Essa é uma propriedade importantíssima da radiciação! Veja o caso geral:
+$$\sqrt[n]{a} = a^{\frac{1}{a}}$$
+Ou seja, tirar a raiz $n$ de um número é a mesma coisa que elevá-lo a $1/n$!
+Uau! Isso é especialmente importante porque, se olharmos desse jeito, vamos
+ver que as mesmas regras da exponenciação se aplicam à radiciação. Vamos 
+listá-las:
+\begin{itemize}
+	\item $\sqrt[n]{a*b} = \sqrt[n]{a}*\sqrt[n]{b}$
+	\paragraph{}
+	Exemplos:
+	\begin{enumerate}
+		\item 
+		$$\sqrt{4*9} = \sqrt{36} = 6$$
+		$$\sqrt{4*9} = \sqrt{4}*\sqrt{9} = 2*3 = 6$$
+		\item
+		$$\sqrt{5}*\sqrt{3} = \sqrt{5*3} = \sqrt{15}$$
+	\end{enumerate}
+	\item $\sqrt[n]{a}*\sqrt[m]{a} = \sqrt[\frac{n*m}{n+m}]{a}$
+	\paragraph{}
+	Isso vem de:
+	$$\sqrt[n]{a}*\sqrt[m]{a} = a^{\frac{1}{n}}*a^{\frac{1}{m}} = $$
+	$$a^{\frac{1}{n} + \frac{1}{m}} = a^{\frac{m+n}{m*n}}$$
+\end{itemize}
+
+\paragraph{}
+Parabéns! Agora você já sabe todos os macetinhos básicos que vão te permitir
+fazer uma infinidade de contas.
+
+\section{Exercícios}
+\begin{enumerate}
+	\item Resolva as expressões de soma e subtração:
+	\begin{enumerate}
+		\item $4 - (-3)$
+		\item $5 - (34 - (43 - 100))$ 
+	\end{enumerate}
+
+	\item Resolva as expressões de multiplicação:
+	\begin{enumerate}
+		\item $4 * (-3 -23)$
+		\item $(1 + 2)*(3-4)$
+	\end{enumerate}
+	
+	\item Aplique a distributiva na expressão:
+	$$(a + b*c)*(c - d)$$
+
+	\item Escreva as expressões a seguir como uma soma/subtração de quadrados.
+	Exemplo:
+	$$4 + 12 + 9 \implies 2^2 + 2*2*3 + 3^2 = {(2+3)}^2$$
+	\begin{enumerate}
+		\item $25 + 40 + 16$
+		\item $25 - 30 + 9$
+		\item $16 + 32 + 16$
+	\end{enumerate}
+
+	\item Resolva as expressões com fração. 
+	Deixe o resultado em forma de fração. Exemplo:
+	$$\frac{1}{3} + \frac{6}{3} = \frac{7}{3}$$
+	\begin{enumerate}
+		\item $\frac{3}{2} + \frac{5}{2}$	
+		\item $\frac{1}{293} + \frac{22}{293} - \frac{14}{293}$
+		\item $\frac{2}{3} * \frac{4}{5}$
+		\item $\frac{\frac{10}{5}}{\frac{3}{7}}$
+		\item $(\frac{(\frac{10}{5})}{(\frac{3}{5})}) * 
+		\frac{2}{4} - \frac{3}{12}$
+		\item $\frac{3}{5} + \frac{5}{6}$
+		\item $\frac{2}{3} - \frac{7}{6}$
+	\end{enumerate}
+\end{enumerate}
+
+
+\end{document}

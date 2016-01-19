@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{amsmath}
@@ -171,7 +171,8 @@ A parte de cima, chamamos de \textit{numerador}. A parte de baixo, chamamos de
 \subsection{Exponenciação}
 Primeiramente, vamos dar nomes aos bois. Quando vemos algo como:
 $$4^5$$
-Nós dizemos que o $4$ é a \textit{base} e o $5$ é o \textit{expoente}.
+Nós dizemos que o $4$ é a \textit{base} e o $5$ é o \textit{expoente}. Agora
+as propriedades:
 \begin{itemize}
 	\item $a^0 = 1$
 	\paragraph{}
@@ -183,6 +184,18 @@ Nós dizemos que o $4$ é a \textit{base} e o $5$ é o \textit{expoente}.
 		\item $0.34398^0 = 1$
 		\item ${-10}^0 = 1$
 	\end{enumerate}
+	E $-1$? Veja só:
+
+	\item $a^{-1} = \frac{1}{a}$
+	\paragraph{}
+	Isso é verdade para qualquer número diferente de zero. Vale para qualquer
+	número negativo além de $-1$:
+	$$a^{-b} = \frac{1}{a^{b}}$$
+	Isso explica por que $a^0 = 1$! Veja só:
+	$$\frac{a^b}{a^b} = 1$$
+	$$\frac{a^b}{a^b} = a^b*(\frac{1}{a^b}) = a^b*a^{-b} = a^{(b-b)} = a^0$$
+	Que tem que dar $1$.
+
 	\item ${(a*b)}^c = a^c*b^c$
 	\paragraph{}
 	Exemplo:
@@ -192,12 +205,14 @@ Nós dizemos que o $4$ é a \textit{base} e o $5$ é o \textit{expoente}.
 	$${(3+2)}^2 = {(5)}^2 = 25$$
 	O que é diferente de:
 	$$3^2 + 2^2 = 9 + 4 = 13$$
+
 	\item $a^b*a^c = a^{(b + c)}$
 	\paragraph{}
 	Exemplo:
 	$$3^2*3^5 = (9)*(243) = 2187$$	
 	$$3^2*3^5 = 3^{(2 + 5)} = 3^{(7)} = 2187$$	
 	Note que \textbf{a base tem que ser a mesma}.
+
 	\item $\frac{a^b}{a^c} = a^{(b - c)}$
 	\paragraph{}
 	Exemplos:
@@ -209,7 +224,10 @@ Nós dizemos que o $4$ é a \textit{base} e o $5$ é o \textit{expoente}.
 		$$\frac{3^2}{3^5} = \frac{9}{243} = 0.037$$	
 		$$\frac{3^2}{3^5} = 3^{(2-5)} = 3^{-3} = 0.037$$	
 	\end{enumerate}
-	Note que \textbf{a base tem que ser a mesma}.
+	Note que \textbf{a base tem que ser a mesma}. Note também que isso vem da
+	regra de que $a^{-1} = \frac{1}{a}$:
+	$$\frac{a^b}{a^c} = a^b*(\frac{1}{a^c}) = a^b*a^{(-c)} = a^{(b-c)}$$
+
 	\item ${(a^b)}^c = a^{(b*c)}$
 	\paragraph{}
 	Exemplo:
@@ -237,6 +255,13 @@ listá-las:
 		\item
 		$$\sqrt{5}*\sqrt{3} = \sqrt{5*3} = \sqrt{15}$$
 	\end{enumerate}
+
+	\item $\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}$
+	\paragraph{}
+	Exemplos:
+	$$\sqrt{\frac{16}{4}} = \sqrt{4} = 2$$
+	$$\sqrt{\frac{16}{4}} = \frac{\sqrt{16}}{\sqrt{4}} = \frac{4}{2} = 2$$
+
 	\item $\sqrt[n]{a}*\sqrt[m]{a} = \sqrt[\frac{n*m}{n+m}]{a}$
 	\paragraph{}
 	Isso vem de:
@@ -250,20 +275,13 @@ fazer uma infinidade de contas.
 
 \section{Exercícios}
 \begin{enumerate}
-	\item Resolva as expressões de soma e subtração:
+	\item Resolva as expressões a seguir:
 	\begin{enumerate}
 		\item $4 - (-3)$
 		\item $5 - (34 - (43 - 100))$ 
-	\end{enumerate}
-
-	\item Resolva as expressões de multiplicação:
-	\begin{enumerate}
 		\item $4 * (-3 -23)$
 		\item $(1 + 2)*(3-4)$
 	\end{enumerate}
-	
-	\item Aplique a distributiva na expressão:
-	$$(a + b*c)*(c - d)$$
 
 	\item Escreva as expressões a seguir como uma soma/subtração de quadrados.
 	Exemplo:
@@ -274,7 +292,7 @@ fazer uma infinidade de contas.
 		\item $16 + 32 + 16$
 	\end{enumerate}
 
-	\item Resolva as expressões com fração. 
+	\item Simplifique as expressões a seguir.
 	Deixe o resultado em forma de fração. Exemplo:
 	$$\frac{1}{3} + \frac{6}{3} = \frac{7}{3}$$
 	\begin{enumerate}
@@ -287,7 +305,71 @@ fazer uma infinidade de contas.
 		\item $\frac{3}{5} + \frac{5}{6}$
 		\item $\frac{2}{3} - \frac{7}{6}$
 	\end{enumerate}
+
+	\item Aplique a distributiva na expressão:
+	$$(a + b*c)*(c - d)$$
+
+	\item Simplifique as frações a seguir:
+	\begin{enumerate}
+		\item $\frac{a}{x} + \frac{b*c}{x}$
+		\item $\frac{a}{x*y} + \frac{c}{x*y}$
+		\item $\frac{\frac{a}{b} + c}{x} + \frac{d}{x}$
+		\item $\frac{a}{x} + \frac{a}{y}$
+		\item $\frac{a}{x} + \frac{b}{y}$
+		\item $\frac{a}{x} + \frac{1}{\frac{b}{y}}$
+	\end{enumerate}
+
+	\item Resolva as expressões a seguir:
+	\begin{enumerate}
+		\item $4^2 * 4^2$
+		\item $3^{(2*3)}$ 
+		\item $3^2*2^2 + 3*(2 + 3^3)$
+		\item $\sqrt{4}*\sqrt{16}$
+		\item $\sqrt{4}*3^2$
+	\end{enumerate}
+
+	\item Assinale as afirmações a seguir como verdadeiro ou falso:
+	\begin{enumerate}
+		\item $\sqrt{(x + y)} = \sqrt{x} + \sqrt{y}$
+		\item $x^{(a+b)} = x^a*x^b$
+		\item $x^{(a+b)} = x^a + x^b$
+		\item $x^{(a+b)}*y^c = {(x*y)}^{(a+b+c)}$
+		\item $\frac{\sqrt[a]{x}}{\sqrt[b]{y}} = \sqrt[a+b]{\frac{x}{y}}$
+		\item $\sqrt{x}*\sqrt{x^{-1}} = 1$
+		\item $x^{a}*\sqrt[b]{x} = x^{\frac{a*b + 1}{b}}$
+	\end{enumerate}
 \end{enumerate}
 
+\section{Respostas aos exercícios}
+\begin{enumerate}
+	\item 
+	\begin{enumerate}
+		\item $7$
+		\item $-86$
+		\item $-104$
+		\item $-3$
+	\end{enumerate} 
 
+	\item 
+	\begin{enumerate}
+		\item ${(5 + 4)}^2$
+		\item ${(5 - 3)}^2$
+		\item ${(4 + 4)}^2$
+	\end{enumerate}
+
+	\item
+	\begin{enumerate}
+		\item $\frac{8}{2}$
+		\item $\frac{9}{293}$
+		\item $\frac{8}{15}$
+		\item $\frac{10}{5} * \frac{7}{3} = \frac{70}{15}$		
+		\item $\frac{10}{3}*\frac{2}{4} - \frac{3}{12} = \frac{20}{12} - 
+		\frac{3}{12} = \frac{17}{12}$
+		\item $\frac{3*6}{5*6} + \frac{5*5}{5*6} = \frac{3*6+5*5}{5*6}
+		= \frac{43}{30}$
+		\item $\frac{2*6 - 7*3}{3*6}$
+	\end{enumerate}
+
+	\item $a*d - a*e + b*c*d - b*c*e = a*(d-e) + b*c*(d-e) = (a+b*c)*(c-d)$
+\end{enumerate}
 \end{document}

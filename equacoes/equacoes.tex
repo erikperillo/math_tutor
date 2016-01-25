@@ -1,0 +1,192 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\title{Matemática Elementar: Equações}
+\author{Erik Perillo}
+\date{}
+\maketitle
+\begin{abstract}
+Nesta etapa, falaremos sobre uma das coisas mais importantes na matemática.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introdução}
+\paragraph{}
+Nesta seção nós vamos aprender o que podemos e o que não podemos fazer com
+equações matemáticas. 
+\paragraph{}
+O que são equações? Ora, uma equação nada mais é que uma expressão de
+\emph{igualdade}. Assim, quando eu digo que $a = b$, eu estou dizendo que $a$
+e $b$ são \emph{idênticos}, eles equivalem um ao outro, \textbf{não importa o
+que é a e o que é b}. O que é mais comum de se ver em equações são
+\emph{incógnitas} que temos que descobrir o valor. Por exemplo, em:
+$$3x + 34 = 89$$
+A incógnita é o $x$, ou seja, é o valor que queremos descobrir qual é. 
+
+\section{Técnicas de solução de equações}
+\paragraph{}
+Nesta seção, vamos ver modos comuns de solucionar uma equação.
+
+\subsection{Adicionando e subtraindo dos dois lados}
+\paragraph{}
+Quando temos uma equação do tipo:
+$$x + 3 = 4$$
+O que podemos fazer para resolvê-la? Ora, é só passar o $3$ para o outro lado,
+não? Ele fica negativo e obtemos $x = 4 - 3 = 1$. Por que podemos passar o $3$
+para o outro lado? Isso porque, no fundo, estamos tirando o $3$ dos dois lados.
+\paragraph{}
+Por que podemos fazer isso? Pense da seguinte maneira: a gente não viu que os
+dois lados da equação são exatamente iguais? Ou seja: $a = b$. Se um lado é
+exatamente igual ao outro, eles são \textbf{a mesma coisa}. Então, se eu
+adicionar/multiplicar/subtrair/dividir ou qualquer outra coisa em um lado e 
+fizer o mesmo do outro, \textbf{eles vão continuar sendo a mesma coisa}.
+\paragraph{}
+Olhando a equação com outros olhos agora, temos:
+$$x + 3 = 4$$
+$$x + 3 - 3 = 4 - 3$$
+$$x = 1$$
+Note que temos que ter sagacidade. Eu não tirei justo o número $3$ à toa, mas
+sim porque eu sabia que era o que me possibilitaria de ter o resultado. Outro
+exemplo:
+$$-7 + x = -10$$
+$$-7 + x + 7 = -10 + 7$$
+$$x = 7 - 10 = -3$$
+
+\subsection{Multiplicando e dividindo dos dois lados}
+\paragraph{}
+Como foi dito na seção anterior, \emph{qualquer} coisa que façamos na equação,
+contanto que seja dos dois lados, mantém a veracidade dela intacta. Vamos
+agora ver o exemplo:
+$$3x = 9$$
+Pensando em passar o $3$ para o outro lado dividindo, obtemos $x = 3$. O que
+fizemos, na verdade, foi a divisão certa:
+$$3x = 9$$
+$$\frac{(3x)}{3} = \frac{9}{3}$$
+$$x = 3$$
+Podemos fazer também multiplicações sábias:
+$$\frac{x}{4} = -2$$
+$$\left(\frac{x}{4}\right)*4 = (-2)*4$$
+$$x = -8$$
+\paragraph{}
+Podemos também inverter o sinal das coisas. Na equação:
+$$-x = -4$$
+Podemos multiplicar os dois lados por $-1$ para obter:
+$$-x*(-1) = -4*(-1)$$
+$$x = 4$$
+\paragraph{}
+Temos que ter um pouco de cuidado! Pode-se dividir os dois lados por zero? Não,
+isso é proibido. Se pudéssemos fazer isso, chegaríamos a resultados bem 
+absurdos como, por exemplo, que $2 = 1$.
+
+\subsection{Exponenciando dos dois lados}
+\paragraph{}
+Continuando com as operações, podemos agora elevar os dois lados a uma mesma
+potência pra conseguir o nosso resultado. Por exemplo:
+$$\sqrt{x} = 12$$
+Elevando os dois lados ao quadrado, temos:
+$${(\sqrt{x})}^2 = 12^2$$
+$$x = 144$$
+Podemos também tirar a raiz (o que é só elevar a $1/2$) dos dois lados:
+$$x^2 = 16$$
+$$\sqrt{x^2} = \sqrt{16}$$
+$$x = \pm4$$
+Por que colocamos $\pm$ no $4$ acima? Bom, tanto o $4$ quanto o $-4$, quando
+elevados ao quadrado, podem dar $16$. Temos, então, que colocar o $\pm$ pois
+qualquer um dos dois satisfaz a equação.
+\paragraph{}
+Temos, porém, que ter \textbf{cuidado}! Quando um dos lados é negativo, a gente
+não pode fazer tirar raiz. Se fosse, por exemplo, $x^2 = -5$, não poderíamos 
+tirar a raiz dos dois lados. Mais pra frente vamos ver que, fazendo certas 
+coisas, vamos poder tirar a raiz, mas por enquanto assuma que é proibido.
+
+\subsection{Misturando várias coisas}
+\paragraph{}
+No dia a dia você não vai encontrar uma equação que só precisa de uma operação
+pra ser solucionada como a que vimos até agora. É comum vermos coisa do tipo:
+$$3x - 24 = 45$$
+O que fazemos, então? O jeito é irmos fazendo operações, \textbf{sempre nos
+dois lados}, até conseguirmos \emph{isolar} o $x$. É sempre melhor começar com
+adições/subtrações e isolar o $x$ de um lado:
+$$3x - 24 = 45$$
+$$3x - 24 + 24 = 45 + 24$$
+$$3x = 69$$
+Agora que temos só $x$ de um lado, podemos nos perguntar o que precisamos fazer
+para que o $3$ suma. A resposta é dividir, claro!
+$$\frac{3x}{3} = \frac{69}{3}$$
+$$3 = 23$$
+\paragraph{}
+Se tivéssemos uma exponenciação ou raiz, é bom sempre primeiro subtrair e
+multiplicar pra depois exponenciar:
+$$4\sqrt{x} - 13 = 3$$
+$$4\sqrt{x}- 13 + 13 = 3 + 13$$
+$$4\sqrt{x} = 16$$
+$$\frac{4\sqrt{x}}{4} = \frac{16}{4}$$
+$$\sqrt{x}= 4$$
+$${(\sqrt{x})}^2 = 4^2$$
+$$x = 16$$
+
+\newpage
+
+\section{Exercícios}
+\begin{enumerate}
+	\item Resolva as equações a seguir para a incógnita:
+	\begin{enumerate}
+		\item $4x = 16$
+		\item $x - 34 = 18$
+		\item $\frac{x}{2} = 4$
+		\item $x + 3 = 5$
+		\item $3 + 4x = 12$
+		\item $2x -9 -4x = -7$
+		\item $3 + 2x = 3x + 8$
+		\item $-x = -9+3$
+		\item $3 + 3x + 10 -\frac{x}{2} = 34$
+		\item $3x + 9 = 0$
+		\item $34 + \frac{x}{3} = 4$
+		\item $4 + \frac{1}{x} = 5 - \frac{3}{x}$
+		\item $23 - 4y = 43$
+		\item $4 - \sqrt{x} = 0$
+		\item $3 + x^2 = 12$
+	\end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\section{Respostas aos Exercícios}
+\begin{enumerate}
+	\item
+	\begin{enumerate}
+		\item $x = 4$
+		\item $x = 52$
+		\item $x = 8$
+		\item $x = 2$
+		\item $x = \frac{9}{4}$
+		\item $x(2 - 4) = -7 + 9 \implies -2x = 2 \implies x = -1$
+		\item Tire o $2x$ dos dois lados. $3 + 2x - 2x = 3x + 8 -2x \implies
+			  x + 8 = 3 \implies x = -5$
+		\item $x = 6$
+		\item $\frac{6x - x}{2} = 21 \implies x = \frac{42}{5}$
+		\item $x = -3$
+		\item $x = -90$
+		\item $\frac{4}{x} = 1 \implies x = 4$
+		\item $y = -5$
+		\item $x = 16$
+		\item $x = \pm 3$
+	\end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}

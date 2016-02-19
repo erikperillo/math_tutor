@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\title{Funções do segundo grau: Exercícios}
+\author{Erik Perillo}
+\date{}
+\maketitle
+
+\newpage
+
+\section{Recapitulando}
+Lembrando que queremos achar as raízes de uma equação da forma:
+$$ax^2 + bx + c = 0$$ 
+Para isso, temos:
+$$\Delta = b^2 - 4ac$$
+$$x = \frac{-b \pm \sqrt{\Delta}}{2a}$$
+
+\section{Exercícios}
+\begin{enumerate}
+	\item Seja a equação $x^2 + 4x - 12 = 0$.
+	\begin{enumerate}
+		\item Determine os termos $a$, $b$ e $c$.
+		\item Determine $\Delta$.
+		\item Determine o conjunto solução $S = \{x_1, x_2\}$
+	\end{enumerate}
+
+	\item Seja a equação $2x^2 + 2x + \frac{1}{2} = 0$.
+	\begin{enumerate}
+		\item Determine os termos $a$, $b$ e $c$.
+		\item Determine $\Delta$.
+		\item Determine o conjunto solução $S = \{x_1, x_2\}$
+	\end{enumerate}
+
+	\item Seja a equação $x^2 + 3x + 4 = 0$.
+	\begin{enumerate}
+		\item Determine os termos $a$, $b$ e $c$.
+		\item Determine $\Delta$.
+		\item Determine o conjunto solução $S = \{x_1, x_2\}$
+	\end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\section{Respostas}
+\begin{enumerate}
+	\item
+		\begin{enumerate}
+			\item $a = 1$, $b = 4$, $c = -12$
+			\item $\Delta = b^2 - 4ac = 4^2 - 4*1*(-12) = 16 + 48 = 64$
+			\item $$x_1 = \frac{-b + \sqrt{\Delta}}{2a} = \frac{-4 + 
+				\sqrt{64}}{2*1} = \frac{-4 + 8}{2} = \frac{4}{2} = 2$$
+				$$x_2 = \frac{-b - \sqrt{\Delta}}{2a} = \frac{-4 - 
+				\sqrt{64}}{2*1} = \frac{-4 - 8}{2} = \frac{-12}{2} = -6$$
+				Assim, $S = \{2, -6\}$.
+				\par Testando os valores (substituindo em $x^2+4x-12$), temos: 
+				\par Para $x=2$: ${(2)}^2 + 4*(2) - 12 = 4 + 8 - 12 = 0$	
+				\par Para $x=-6$: ${(-6)}^2 + 4*(-6) - 12 = 36 - 24 - 12 = 0$	
+		\end{enumerate}
+
+	\item 
+		\begin{enumerate}
+			\item $a = 2, b = 2, c = \frac{1}{2}$
+			\item $\Delta = 2^2 - 4*2*\frac{1}{2} = 0$
+			\item $x_1 = x_2 = \frac{-2}{2*2} = -\frac{1}{2}$
+				$\implies S = \{-\frac{1}{2}\}$
+		\end{enumerate}
+
+	\item Seja a equação $x^2 + 3x + 4 = 0$.
+	\begin{enumerate}
+		\item $a=1, b=3, c=4$
+		\item $\Delta = 3^2 - 4*1*4 = -7$
+		\item $S = \{\} = \emptyset$
+	\end{enumerate}
+\end{enumerate}
+
+\end{document}
